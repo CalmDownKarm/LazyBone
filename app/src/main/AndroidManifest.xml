@@ -40,6 +40,10 @@
         </activity>
         <activity android:name=".Rao_Order" >
         </activity>
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".Shopping_Cart" >
+        </activity>
     </application>
 
 </manifest>
