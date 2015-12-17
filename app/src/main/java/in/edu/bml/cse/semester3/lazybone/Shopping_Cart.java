@@ -80,10 +80,12 @@ public class Shopping_Cart extends Activity implements View.OnClickListener {
         switch (v.getId()){
             case R.id.confirmation_button:
                 SmsManager smsManager = SmsManager.getDefault();
-                String SmsString = "\nNaan ";
+                String SmsString = "Order ID : ABCD\nNaan ";
                 Toast.makeText(this, "ORDER PLACED", Toast.LENGTH_SHORT).show();
                 SmsString+=Integer.toString(order_quantity[0])+"\nParantha "+Integer.toString(order_quantity[1])+"\nPaneer "+Integer.toString(order_quantity[2]);
-                smsManager.sendTextMessage("9818971118", null, SmsString, null, null);
+                smsManager.sendTextMessage(getResources().getString(R.string.RaoNumber), null, SmsString, null, null);
+                Intent finishOrder = new Intent(this, FinishOrder.class);
+                startActivity(finishOrder);
                 break;
             case R.id.cancelation_button:
                 int i=0;

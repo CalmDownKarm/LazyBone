@@ -39,7 +39,7 @@ public class OrderOrPickup extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
                 break;
             case R.id.PickUp:
-                Intent shitintent = new Intent(this, PickUpActivity.class);
+                Intent shitintent = new Intent(this, Wait.class);
                 shitintent.putExtra("info",info);
                 startActivity(shitintent);
                 break;

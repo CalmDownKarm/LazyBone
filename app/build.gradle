@@ -14,6 +14,7 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -32,4 +33,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-identity:8.3.0'
     compile 'com.android.support:design:23.1.1'
     compile 'com.google.android.gms:play-services-auth:8.3.0'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.parse:parse-android:1.+'
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
 }

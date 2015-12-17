@@ -47,7 +47,7 @@ public class Rao_Order extends Activity {
         public void onListItemClick(ListView l, View v, int position, long id) {
             String itemValue = (String) l.getItemAtPosition(position);
 
-            if(itemValue=="Show Cart"){
+            if(itemValue.equals("Show Cart")){
                 Intent intent = new Intent(getActivity(), Shopping_Cart.class);
                 intent.putExtra("Order Quantity", order_quantity);
                 startActivity(intent);

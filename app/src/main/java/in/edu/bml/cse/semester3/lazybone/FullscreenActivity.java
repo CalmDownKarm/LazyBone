@@ -10,11 +10,17 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+
+import static com.parse.Parse.*;
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
 public class FullscreenActivity extends AppCompatActivity {
+
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -39,6 +45,9 @@ public class FullscreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Parse.initialize(this, "rBbpXY1ye1BkFXFjnqcpY5SZhct5VfwVo0pSxJfB", "hRzTcTUPRwIhe4fQ7Nz1ul2feHx06LlIaAayn8ZU");
+        ParseInstallation.getCurrentInstallation().saveInBackground();
+
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_fullscreen);
