@@ -6,10 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class PickUpActivity extends AppCompatActivity implements  View.OnClickListener{
     String order_info;
-    Button input;
+    ImageButton input;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +18,7 @@ public class PickUpActivity extends AppCompatActivity implements  View.OnClickLi
         setContentView(R.layout.activity_pick_up);
         Intent in = getIntent();
        // order_info = in.getStringExtra("Order Info");
-        input = (Button)findViewById(R.id.buttonpicked);
+        input = (ImageButton)findViewById(R.id.buttonpicked);
 
         input.setOnClickListener(this);
         SmsManager smsManager = SmsManager.getDefault();

@@ -8,103 +8,131 @@
     tools:context="in.edu.bml.cse.semester3.lazybone.Shopping_Cart">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Naan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/naan"
         android:id="@+id/item1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="114dp"
-        android:visibility="invisible"/>
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView8"
+        android:layout_toStartOf="@+id/textView8" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Parantha"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:text="@string/paratha"
         android:id="@+id/item2"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textColor="#000000"
         android:layout_below="@+id/item1"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="48dp"
-        android:visibility="invisible"/>
+        android:layout_alignStart="@+id/item1"
+        android:layout_marginTop="18dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Shahi Paneer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/shashi_paneer"
         android:id="@+id/item3"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textColor="#000000"
         android:layout_below="@+id/item2"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="59dp"
-        android:visibility="invisible"/>
+        android:layout_alignStart="@+id/item2" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Shopping Cart"
+        android:text="@string/shopping_cart"
         android:id="@+id/textView8"
-        android:layout_toEndOf="@+id/item1"
-        android:layout_alignParentTop="true" />
+        android:layout_marginTop="21dp"
+        android:elevation="3dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Small Text"
         android:id="@+id/quantity1"
-        android:layout_above="@+id/item2"
-        android:layout_alignParentEnd="true"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/item1"
+        android:layout_alignEnd="@+id/quantity2"
+        android:textStyle="bold"
+        android:textColor="#000000" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="New Text"
         android:id="@+id/quantity2"
-        android:layout_above="@+id/item3"
-        android:layout_toEndOf="@+id/textView8"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/item2"
+        android:layout_alignBottom="@+id/item2"
+        android:layout_toEndOf="@+id/textView8" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="New Text"
         android:id="@+id/quantity3"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/item3"
         android:layout_alignBottom="@+id/item3"
-        android:layout_alignParentEnd="true"
-        android:visibility="invisible"/>
+        android:layout_alignStart="@+id/quantity2"
+        android:textStyle="bold"
+        android:textColor="#000000" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
         android:text="New Text"
         android:id="@+id/totalcost"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textColor="#000000"
         android:layout_below="@+id/quantity3"
-        android:layout_alignEnd="@+id/quantity3"
-        android:visibility="visible"/>
+        android:layout_alignStart="@+id/quantity3"
+        android:layout_marginTop="23dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TOTAL"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:text="@string/total"
         android:id="@+id/textView13"
-        android:layout_below="@+id/item3"
-        android:layout_alignParentStart="true" />
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/totalcost"
+        android:layout_alignEnd="@+id/item2" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cancel"
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="@string/cancel"
         android:id="@+id/cancelation_button"
-        android:layout_below="@+id/totalcost"
-        android:layout_alignEnd="@+id/totalcost"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:elevation="8dp"
+        android:background="@drawable/cancel"
+        android:layout_alignTop="@+id/confirmation_button"
+        android:layout_alignEnd="@+id/quantity3" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Confirm"
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="@string/confirm"
         android:id="@+id/confirmation_button"
-        android:layout_below="@+id/cancelation_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="47dp"
+        android:background="@drawable/confirm"
+        android:elevation="8dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
 </RelativeLayout>

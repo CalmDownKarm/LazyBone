@@ -31,8 +31,26 @@
     <string name="dialog_message">Enter Amount</string>
     <string name="ok">OK</string>
     <string name="cancel">CANCEL</string>
-    <string name = "RaoNumber">8814954817</string>
-    <string name = "ReceiverNumber">8685058960</string>
-    <string name = "SenderNumber">9818971118</string>
+    <string name = "RaoNumber">07839500426</string>
+    <string name = "ReceiverNumber">08570031638</string>
+    <string name = "SenderNumber">09818971118</string>
+    <string name="picked_up">Picked Up</string>
+    <string name="at_the_gate">AT THE GATE</string>
+    <string name="thank_you">THANK YOU FOR USING OUR APP!</string>
+    <string name="thanks_for_placing_order">THANK YOU FOR PLACING AN ORDER</string>
+    <string name="order_recieved">ORDER RECEIVED</string>
+    <string name="rao">RAO</string>
+    <string name="muskaan">MUSKAAN</string>
+    <string name="adda">Adda</string>
+    <string name="pick_up_order">PICK UP ORDER</string>
+    <string name="order">PLACE ORDER</string>
+    <string name="naan">Naan</string>
+    <string name="paratha">Parantha</string>
+    <string name="shashi_paneer">Shahi Paneer</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="total">TOTAL</string>
+    <string name="confirm">Confirm</string>
+    <string name="wait">Wait for Orders to arrive</string>
+    <string name="enter_number">Enter The Number</string>
 
 </resources>

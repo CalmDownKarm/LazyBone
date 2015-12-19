@@ -5,11 +5,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="in.edu.bml.cse.semester3.lazybone.LogIn">
+    tools:context="in.edu.bml.cse.semester3.lazybone.LogIn"
+    android:background="@drawable/backdropgrey">
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="8dp" />
 
 </RelativeLayout>

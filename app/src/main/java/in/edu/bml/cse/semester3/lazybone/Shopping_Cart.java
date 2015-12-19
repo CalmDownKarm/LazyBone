@@ -7,13 +7,14 @@ import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class Shopping_Cart extends Activity implements View.OnClickListener {
     int[] order_quantity = new int[3];
     TextView input1,input2,input3,quantity1,quantity2,quantity3,totalcost;
-    Button confirm,cancel;
+    ImageButton confirm,cancel;
     @Override
     protected void onDestroy(){
         input1.setVisibility(View.INVISIBLE);
@@ -38,9 +39,9 @@ public class Shopping_Cart extends Activity implements View.OnClickListener {
         quantity2 = (TextView)findViewById(R.id.quantity2);
         quantity1 = (TextView)findViewById(R.id.quantity1);
         totalcost = (TextView)findViewById(R.id.totalcost);
-        confirm = (Button)findViewById(R.id.confirmation_button);
+        confirm = (ImageButton)findViewById(R.id.confirmation_button);
 
-        cancel = (Button)findViewById(R.id.cancelation_button);
+        cancel = (ImageButton)findViewById(R.id.cancelation_button);
         Intent gg = getIntent();
       //  Toast.makeText(this, "NIGGER", Toast.LENGTH_LONG).show();
         order_quantity = gg.getIntArrayExtra("Order Quantity");

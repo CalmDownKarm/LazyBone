@@ -5,29 +5,39 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="in.edu.bml.cse.semester3.lazybone.OrderActivity">
+    tools:context="in.edu.bml.cse.semester3.lazybone.OrderActivity"
+    android:background="@drawable/backdropgrey">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RAO"
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="@string/rao"
         android:id="@+id/RAO"
+        android:elevation="8dp"
+        android:background="@drawable/raoicon"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignStart="@+id/Adda"
+        android:layout_marginTop="29dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MUSKAAN"
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="@string/muskaan"
         android:id="@+id/muskaan"
+        android:elevation="8dp"
+        android:background="@drawable/muskaanicon"
         android:layout_below="@+id/RAO"
-        android:layout_alignParentStart="true" />
+        android:layout_alignStart="@+id/RAO"
+        android:layout_marginTop="41dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adda"
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="@string/adda"
         android:id="@+id/Adda"
-        android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/RAO" />
+        android:elevation="8dp"
+        android:background="@drawable/addaicon"
+        android:layout_below="@+id/muskaan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
 </RelativeLayout>

@@ -18,19 +18,19 @@ public class SMSListner extends BroadcastReceiver {
                 String messageBody = smsMessage.getMessageBody();
                 if(messageBody!=null){
                     if(messageBody.contains("Order Number ABCD AT GATE")){
-                        Log.d("BOOBS", "AT GATE");
+                        Toast.makeText(context, messageBody, Toast.LENGTH_SHORT).show();
                         Intent myIntent = new Intent ( context,AtGate.class );
                         myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         context.startActivity(myIntent);
                         //Trigger an SMS TO RECEIVER
                     }
                     else if(messageBody.contains("Order Number ABCD FOR PICKUP")){
-                        Log.d("BOOBS", "ORDER NUMBER ABCD");
+                        Toast.makeText(context, messageBody, Toast.LENGTH_SHORT).show();
                         Intent phone = new Intent();
                         Intent myIntent = new Intent ( context,PickUpActivity.class );
                         myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         context.startActivity(myIntent);
-                        Toast.makeText(context, messageBody, Toast.LENGTH_SHORT).show();
+
                     }
                 }
 

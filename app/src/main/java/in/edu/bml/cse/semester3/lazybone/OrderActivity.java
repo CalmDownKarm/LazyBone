@@ -6,23 +6,24 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class OrderActivity extends AppCompatActivity implements View.OnClickListener {
     String info[] = new String[3];
-    Button rao;
-    Button muskaan;
-    Button adda;
+    ImageButton rao;
+    ImageButton muskaan;
+    ImageButton adda;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
         Intent in = getIntent();
         info = in.getStringArrayExtra("info");
-        rao = (Button) findViewById(R.id.RAO);
+        rao = (ImageButton) findViewById(R.id.RAO);
         rao.setOnClickListener(this);
-        muskaan = (Button) findViewById(R.id.muskaan);
+        muskaan = (ImageButton) findViewById(R.id.muskaan);
         muskaan.setOnClickListener(this);
-        adda = (Button) findViewById(R.id.Adda);
+        adda = (ImageButton) findViewById(R.id.Adda);
         adda.setOnClickListener(this);
 
 
